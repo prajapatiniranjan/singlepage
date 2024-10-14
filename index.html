@@ -14,17 +14,17 @@
     <header>
         <div class="logo">Muscle Mania</div>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#trainer">Our Trainer</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
         </nav>
     </header>
 
-    <h1 style="text-align: center; font-size: 40px;">Muscles are make up of man</h1>
+    <h1 style="text-align: center; font-size: 40px;">Muscles are made up of man</h1>
 
     <section id="home" class="hero">
         <h1>Welcome to Muscle Mania</h1>
@@ -83,7 +83,13 @@
         <p>&copy; 2024 Muscle Mania. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+                const navbar = document.querySelector('.navbar');
+                // Toggle the active class
+                navbar.classList.toggle('active');
+            }
+    </script>
 </body>
 
 </html>
