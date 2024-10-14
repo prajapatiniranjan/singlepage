@@ -1,0 +1,163 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(black, rgb(36, 34, 34), grey );
+    color: white;
+    filter: blur(6);
+    background-image: url(/hero/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) ;
+     background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Scales the image to cover the entire area */
+    background-position: center; /* Centers the image */
+    padding: 100px 20px;
+    margin-top: 600px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 24px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #ff5722;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h2{
+    color: #ff5722;
+    
+}
+
+/* Call to Action Button */
+.cta-button {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#about img{
+     /* filter: blur(4px); */
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 10px -30px rgba(0, 0, 0, 0.425);
+}
+
+/* Responsive Image */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Trainer Profile Styles */
+.trainer-profile {
+    display: inline-block;
+    margin: 20px;
+}
+
+.trainer-profile img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hero {
+        padding: 50px 20px;
+    }
+}
+
+/* Active Hamburger Menu */
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    width: 90%;
+    background: #333;
+}
